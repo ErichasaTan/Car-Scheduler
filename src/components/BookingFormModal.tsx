@@ -29,8 +29,8 @@ const BookingFormModal = ({ isOpen, onClose }: Props) => {
       id: uuidv4(),
       name,
       reason,
-      startTime: new Date(startTime),
-      endTime: new Date(endTime),
+      start: new Date(startTime),
+      end: new Date(endTime),
     });
 
     // Reset and close

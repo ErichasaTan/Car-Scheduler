@@ -6,8 +6,8 @@ export interface Booking {
   id: string;
   name: string;
   reason: string;
-  startTime: Date;
-  endTime: Date;
+  start: Date;
+  end: Date;
 }
 
 // Class called BookingStore to manage the state of bookings.
@@ -28,7 +28,7 @@ class BookingStore {
   // It checks for time conflicts before adding.
   addBooking(booking: Booking) {
     const hasConflict = this.bookings.some(
-      (b) => booking.startTime < b.endTime && booking.endTime > b.startTime
+      (b) => booking.start < b.end && booking.end > b.start
     );
 
     // If there's a conflict, we alert the user and don't add the booking.

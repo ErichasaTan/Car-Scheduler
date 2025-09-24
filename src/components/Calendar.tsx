@@ -24,8 +24,8 @@ const Calendar = observer(() => {
   const events = bookingStore.bookings.map((b) => ({
     id: b.id,
     title: `${b.name} (${b.reason})`,
-    start: b.startTime,
-    end: b.endTime,
+    start: b.start,
+    end: b.end,
   }));
 
   return (
