@@ -47,11 +47,19 @@ const BookingFormModal = ({ isOpen, onClose }: Props) => {
       onRequestClose={onClose}
       contentLabel="Add Booking"
       style={{
+        overlay: {
+          backgroundColor: "rgba(0, 0, 0, 0.5)", // dark semi-transparent backdrop
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 1000, // 👈 ensures it's above calendar + green line
+        },
         content: {
           maxWidth: "400px",
-          margin: "auto",
+          width: "100%",
           borderRadius: "8px",
           padding: "1.5rem",
+          inset: "unset", // removes default positioning
         },
       }}
     >
