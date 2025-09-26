@@ -42,7 +42,7 @@ npm install
 npm start
 ```
 
-## Project Structure
+## 📂 Project Structure
 src/  
 ├── components/  
 │   ├── BookingFormModal.tsx   # Modal form for adding bookings  
@@ -52,7 +52,7 @@ src/
 ├── App.tsx                    # Main app component  
 └── index.tsx                  # Entry point  
 
-## TODO / Future Improvements
+## 📝 TODO / Future Improvements
 🔔 Notifications/reminders for bookings  
 🗑 Ability to edit or delete existing bookings  
 👥 Multi-user support with authentication  
